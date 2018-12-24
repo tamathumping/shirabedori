@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="generic-banner element-banner relative">
+        <div class="container">
+            <div class="row height align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="banner-content text-center">
+                        <h2 class="text-white">Retweet Searcher</h2>
+                        <p class="text-white">あるツイートに対するリツイートを検索できます。<br>
+                            ※すべてのリツイートが取得できるわけではありません（鍵アカウントは取得できません）。
+                            ※取得できるリツイートは基本的に1週間以内のものに限ります。</p>
+
+                        <div class="mt-5 col-lg-6" style="margin: auto;">
+
+                            <form action="{{ url_for('post_query') }}" method="post" class="validate subscription relative">
+                                <div class="form-group">
+                                    <input type="text" class="form-control m-2" id="tweetid" name="tweet_url" placeholder="ツイートのIDを入力" pattern="[0-9]{1,}" required>
+                                </div>
+                                <button type="submit" class="primary-btn">検索<span class="lnr lnr-arrow-right"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="white-bg">
+        <div class="container">
+            <div class="section-top-border">
+                <div>
+                    <a href="#list" class="genric-btn link circle">Results</a>
+                    <a href="#graph" class="genric-btn link circle">Graph</a>
+                </div>
+                <h3 class="mb-30 mt-30">Results</h3>
+                {{text}}
+                {%if te%}
+                <!--twythonerror-->
+                <p>{{te}}</p>
+                {% elif e %}
+                <!--500 error-->
+                <p>{{e}}</p>
+                {% else %}
+                <p>{{count}}リツイート</p>
+
+                <div class="progress-table-wrap" id="list">
+                    <div class="progress-table">
+                        <div class="table-head">
+                            <div class="serial">ユーザー名</div>
+                            <div class="country">screenname</div>
+                            <div class="visit">ツイート時間</div>
+                            <div class="percentage">url</div>
+                        </div>
+                        {% for status in status%}
+                        <div class="table-row">
+                            <div class="serial">{{status.user.name}}</div>
+                            <div class="country">{{status.user.screen_name}}</div>
+                            <div class="visit">{{status.created_at}}</div>
+                            <div class="percentage">
+                                <a href="https://twitter.com/{{status.user.screen_name}}">ツイートをみる</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-top-border" id="graph">
+                <h3>Graph</h3>
+                <div class="row gallery-item">
+                    <div class="col-md-12">
+                       <!-- <a href="img/g1.jpg" class="img-pop-up"><div class="single-gallery-image" style="background: url(/static/img/g1.jpg);"></div></a>-->
+                        {{ script|safe }}
+                        {{ div|safe }}
+                    </div>
+                </div>
+            </div>
+               {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../static/img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>shirabedori しらべどりプロジェクト | pythonでなんでもわかるようにしてみる </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/linearicons.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/nice-select.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/sirabedori.css">
+    <link
+    href="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.css"
+    rel="stylesheet" type="text/css">
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.13.0.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.13.0.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.13.0.min.js"></script>
+</head>
+<body class="dup-body">
+<div class="dup-body-wrap">
+    <!-- Start Header Area -->
+    <header class="default-header">
+        <div class="header-wrap">
+            <div class="header-top d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="/"><img src="../static/img/logobird.png" alt="しらべどりロゴ"><span>しらべどり<br>プロジェクト</span></a>
+                </div>
+                <div class="main-menubar d-flex align-items-center">
+                    <nav class="hide">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/retweet_search2">Retweet Search</a>
+                        <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+                    </nav>
+                    <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Banner Area -->
+    {% block content %}
+    {% endblock %}
+    <!-- End Banner Area -->
+    <!-- Start Carousel Area -->
+    <!--<section class="section-gap carousel-area">
+        <div class="overlay overlay-bg"></div>
+        <div class="active-bottle-carousel">
+            <div class="item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-md-4">
+                            <div class="carousel-thumb">
+                                <img src="../static/img/c.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-7">
+                            <div class="carousel-content">
+                                <h2 class="text-white">Twitterキャンペーンをより簡単に</h2>
+                                <h5 class="text-white mb-20">Collect from your nearest supershop imedietely</h5>
+                                <p class="text-white mb-30">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach.Small Towns and Big StatesFor evidence of the double standard, we need look no farther than Arlington.</p>
+                                <a href="#" class="primary-btn white">View More<span class="lnr lnr-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-md-4">
+                            <div class="carousel-thumb">
+                                <img src="../static/img/c.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-7">
+                            <div class="carousel-content">
+                                <h2 class="text-white">リツイートされやすいタイミングを解析</h2>
+                                <h5 class="text-white mb-20">Collect from your nearest supershop imedietely</h5>
+                                <p class="text-white mb-30">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards – especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach.Small Towns and Big StatesFor evidence of the double standard, we need look no farther than Arlington.</p>
+                                <a href="#" class="primary-btn white">View More<span class="lnr lnr-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- End Carousel Area -->
+    <!-- Start Contact Area -->
+    <!--<section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-address text-center">
+                        <h6>Visit Our Office</h6>
+                        <p>56/8, bir uttam qazi nuruzzaman road, west panthapath, kalabagan, Dhanmondi, Dhaka - 1205</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-address text-center">
+                        <h6>Let’s call us</h6>
+                        <p>Phone 01: <a href="tel:023545">012-6532-568-9746</a> <br> Phone 02:<a href="tel:023545">012-6532-568-9748</a> <br>FAX:<a href="tel:023545">02-6532-568-746</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-address text-center">
+                        <h6>Let’s Email Us</h6>
+                        <p><a href="mailto:demo@gmail.com">hello@colorlib.com</a> <br>
+                            <a href="mailto:demo@gmail.com">mainhelpinfo@colorlib.com</a> <br>
+                            <a href="mailto:demo@gmail.com">infohelp@colorlib.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-address text-center">
+                        <h6>Customer Support</h6>
+                        <p><a href="mailto:demo@gmail.com">support@colorlib.com</a> <br>
+                            <a href="mailto:demo@gmail.com">emergencysupp@colorlib.com</a> <br>
+                            <a href="mailto:demo@gmail.com">extremesupp@colorlib.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- End Contact Area -->
+    <div class="white-bg">
+        <div class="container">
+            <div class="section-top-border">
+                <h3 class="mb-30">しらべどりプロジェクトとは？</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/d.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 mt-sm-20">
+                        <p><a href="https://gitlab.com/tamathumping" alt="@tamathumping">@tamathumping</a> いろんな「わからないこと」を「わかるようにする」プロジェクトです。<br>
+                            主にpythonによるデータ可視化とか。今後、機能追加予定です。機械学習も。<br>
+                        tools：python, javascript, git, Heroku</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Strat Footer Area -->
+    <footer class="section-gap footer-widget-area">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="subscription-area">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                        <form action="https://twitter.us18.list-manage.com/subscribe/post?u=154449fb9f72208fa939dc348&amp;id=9c2f39caaf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscription relative" target="_blank" novalidate>
+                            <input type="email" name="EMAIL" placeholder="メールアドレスを入力" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+                            <div id="mce-responses">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <button class="primary-btn">Subscribe now<span class="lnr lnr-arrow-right"></span></button>
+                            <div class="info"></div>
+                        </form>
+                        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6 class="text-white text-uppercase mb-20">About Agency</h6>
+                        <ul class="footer-nav">
+                            <li><a href="#">Managed Website</a></li>
+                            <li><a href="#">Manage Reputation</a></li>
+                            <li><a href="#">Power Tools</a></li>
+                            <li><a href="#">Marketing Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6 class="text-white text-uppercase mb-20">Navigation Links</h6>
+                        <ul class="footer-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Main Features</a></li>
+                            <li><a href="#">Offered Services</a></li>
+                            <li><a href="#">Latest Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6 class="text-white text-uppercase mb-20">Navigation Links</h6>
+                        <ul class="footer-nav">
+                            <li><a href="#">Works & Builders</a></li>
+                            <li><a href="#">Works & Wordpress</a></li>
+                            <li><a href="#">Works & Templates</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6 class="text-white text-uppercase mb-20">Instafeed</h6>
+                        <ul class="instafeed d-flex flex-wrap">
+                            <li><img src="../static/img/i1.jpg" alt=""></li>
+                            <li><img src="../static/img/i2.jpg" alt=""></li>
+                            <li><img src="../static/img/i3.jpg" alt=""></li>
+                            <li><img src="../static/img/i4.jpg" alt=""></li>
+                            <li><img src="../static/img/i5.jpg" alt=""></li>
+                            <li><img src="../static/img/i6.jpg" alt=""></li>
+                            <li><img src="../static/img/i7.jpg" alt=""></li>
+                            <li><img src="../static/img/i8.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+            <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+                <p class="footer-text m-0">Copyright &copy; 2018 All rights reserved   |   This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/">Colorlib</a></p>
+                <!--
+                <div class="footer-social d-flex align-items-center">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+                -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+</div>
+
+<script src="../static/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="../static/js/vendor/bootstrap.min.js"></script>
+<script src="../static/js/jquery.ajaxchimp.min.js"></script>
+<script src="../static/js/owl.carousel.min.js"></script>
+<script src="../static/js/jquery.nice-select.min.js"></script>
+<script src="../static/js/jquery.magnific-popup.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>

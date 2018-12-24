@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+    <section class="banner-area relative">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row fullscreen align-items-center justify-content-between">
+                <div class="col-lg-6 col-md-7 col-sm-8">
+                    <div class="banner-content">
+                        <div class="project_title">
+                            <div class="no">
+                                <p>#1</p>
+                            </div>
+                            <h1>Retweet <br>Searcher β</h1>
+                        </div>
+
+                        <p>ツイートのidを入力するだけでリツイートを検索できます。<br>
+                            ※このアプリはtwitterAPIを利用しています。<br>
+                            ※すべてのリツイートが取得できるわけではありません（鍵アカウントは取得できません）<br>
+                            ※検索できるリツイートはリツイートされて1週間以内のものに限ります。</p>
+
+                        <form action="{{ url_for('post_query') }}" method="post" class="validate subscription relative">
+                            <div class="form-group">
+                                <input type="text" style="border: solid 1px #1e50a2;" class="form-control m-2" id="tweetid" name="tweet_url" placeholder="ツイートのIDを入力" pattern="[0-9]{1,}" required>
+                            </div>
+                            <button type="submit" class="primary-btn">検索<span class="lnr lnr-arrow-right"></span></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-4">
+                    <img src="/static/img/banner.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

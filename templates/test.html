@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>data_sample</title>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<aside>
+<form>
+          <div>
+            <label for="category">Choose a category:</label>
+            <select id="category">
+              <option selected>フォロワー数多い順</option>
+              <option>ツイート数多い順</option>
+              </select>
+          </div>
+</form>
+</aside>
+<main>
+
+</main>
+<script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+
+<script>
+$(function(){
+
+//HTMLを初期化
+$("table.tbl tbody").html("");
+
+//HTMLを生成
+$.getJSON("sample_from_pandas.json", function(data){
+$(data.release).each(function(){
+$('<tr>'+
+'<th>'user_name'</th>'+'<th>'+follower'</th>'+
+'<td class="label"><span class="' + this.screen_name + '">' +
+this.followers_count + '</span></td>'+
+'</tr>').appendTo('table.tbl tbody');
+})
+})
+});
+
+</script>
+</body>
